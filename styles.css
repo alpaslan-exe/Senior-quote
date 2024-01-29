@@ -35,7 +35,7 @@ body::after {
 }
 .scroll-text::after {
   content: "Refresh this site to reread the credits! If anyone's in Detroit hit me up!";
-  position: absolute;
+  position: relative;
   bottom: 0;
   right: 0;
   color: #ccff00;
