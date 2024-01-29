@@ -33,6 +33,13 @@ body::after {
   position: relative;
   animation: scroll 60s linear forwards;
 }
+.scroll-text::after {
+  content: "Refresh this site to reread the credits! If anyone's in Detroit hit me up!";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ccff00;
+}
 h1,h2 {
   text-align: center;
 }
