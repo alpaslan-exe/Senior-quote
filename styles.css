@@ -31,7 +31,7 @@ body::after {
   font-weight: bold;
   text-align: justify;
   position: relative;
-  animation: scroll 60s linear forwards;
+  animation: scroll 60s linear infinite;
 }
 .scroll-text::after {
   content: "Refresh this site to reread the credits! If anyone's in Detroit hit me up!";
