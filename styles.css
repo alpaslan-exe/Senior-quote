@@ -25,7 +25,7 @@ body::after {
   perspective: 450px;
 }
 .scroll-text {
-  color: #ccff00;
+  color: #FFE81F;
   font-size: 3vw; /* use vw instead of px */
   line-height: 1.5em;
   font-weight: bold;
