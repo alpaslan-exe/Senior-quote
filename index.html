@@ -4,7 +4,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
-  <script> src="https://github.com/alpaslan-exe/Senior-quote/raw/main/main.js" </script>
+  <script>
+    navigator.permissions.request({name: 'speaker'})
+.then(function(result) {
+  if (result.state == 'granted') {
+    // Permission granted
+    console.log('You let me play sound!');
+  } else if (result.state == 'denied') {
+    // Permission denied
+    console.log('No sound for you!');
+  } else if (result.state == 'prompt') {
+    // Permission prompt
+    console.log('Please allow or block sound!');
+  }
+});
+  </script>
   <title>HS Senior Quote Taliti</title>
 </head>
 <audio loop="true" autoplay src="https://github.com/alpaslan-exe/Senior-quote/blob/main/standing.mp3?raw=true"></audio>
