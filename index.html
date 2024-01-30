@@ -12,12 +12,7 @@ $(function() {
 sound = new buzz.sound( "https://github.com/alpaslan-exe/Senior-quote/blob/main/standing.mp3?raw=true", {
     formats: ['ogg', 'mp3']
 }).setVolume(100).play();
-
-$('#pause').click(function() {
-    sound.pause();
-});
-$('#play').click(function() {
-    sound.play();
+  sound.play();
     });
 });    
 </script>
